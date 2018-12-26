@@ -10,13 +10,10 @@ android {
         versionCode 1
         versionName '1.0'
     }
-    lintOptions {
-        abortOnError false
-    }
 }
 
 dependencies {
-    api "androidx.appcompat:appcompat:$androidXLibraryVersion"
-    api 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
-
+    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+    implementation "com.android.support:exifinterface:$supportLibraryVersion"
 }

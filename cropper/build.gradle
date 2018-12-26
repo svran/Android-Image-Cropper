@@ -17,9 +17,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
-    lintOptions {
-        abortOnError false
-    }
 }
 
 // This configuration is used to publish the library to a local repo while a being forked and modified.
@@ -42,7 +39,7 @@ publishing {
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
 
 dependencies {
-    api "androidx.appcompat:appcompat:$androidXLibraryVersion"
-    implementation "androidx.exifinterface:exifinterface:$androidXLibraryVersion"
+    compileOnly "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation "com.android.support:exifinterface:$supportLibraryVersion"
 }
 

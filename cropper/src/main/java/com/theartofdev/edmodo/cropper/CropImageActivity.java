@@ -22,10 +22,10 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
+import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -217,7 +217,7 @@ public class CropImageActivity extends AppCompatActivity
 
   @Override
   public void onRequestPermissionsResult(
-      int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
+          int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
     if (requestCode == CropImage.PICK_IMAGE_PERMISSIONS_REQUEST_CODE) {
       if (mCropImageUri != null
           && grantResults.length > 0

@@ -10,12 +10,9 @@ android {
         versionCode 1
         versionName '1.0'
     }
-    lintOptions {
-        abortOnError false
-    }
 }
 
 dependencies {
     api project(':cropper')
-    api "androidx.appcompat:appcompat:$androidXLibraryVersion"
+    api "com.android.support:appcompat-v7:$supportLibraryVersion"
 }
