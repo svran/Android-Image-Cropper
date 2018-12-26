@@ -5,6 +5,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
@@ -24,6 +25,6 @@ ext {
 
     PUBLISH_GROUP_ID = 'com.github.svran'
     PUBLISH_ARTIFACT_ID = 'android-image-cropper'
-    PUBLISH_VERSION = '2.8.0'
+    PUBLISH_VERSION = '2.8.0.2'
     // gradlew clean build generateRelease
 }
